@@ -19,10 +19,10 @@
             steps {
                 script {
                   sh 'set +x; $(aws ecr get-login --no-include-email --region us-east-1)'
-                  sh 'docker tag petclinic:latest 111170519921.dkr.ecr.us-east-1.amazonaws.com/petclinic:latest'
-                  sh 'docker tag petclinic:latest 111170519921.dkr.ecr.us-east-1.amazonaws.com/petclinic:${BUILD_NUMBER}'
-                  sh 'docker push 111170519921.dkr.ecr.us-east-1.amazonaws.com/petclinic:latest'
-                  sh 'docker push 111170519921.dkr.ecr.us-east-1.amazonaws.com/petclinic:${BUILD_NUMBER}'
+                  sh 'docker tag petclinic:latest 1111705.dkr.ecr.us-east-1.amazonaws.com/petclinic:latest'
+                  sh 'docker tag petclinic:latest 111170.dkr.ecr.us-east-1.amazonaws.com/petclinic:${BUILD_NUMBER}'
+                  sh 'docker push 1111705.dkr.ecr.us-east-1.amazonaws.com/petclinic:latest'
+                  sh 'docker push 111.dkr.ecr.us-east-1.amazonaws.com/petclinic:${BUILD_NUMBER}'
             }
           }
         }
